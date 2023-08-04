@@ -108,11 +108,23 @@ ul {
   opacity: 0.75;
 }
 
+.hogName {
+  color: #FBB;
+}
+
 .pigTile h3 {
   color: #FBB;
 }
 
-.minPigTile {
+.hogImg {
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 500px;
+  max-height: 500px;
+  background-size: cover;
+}
+
+/* .minPigTile {
   width: 250px;
   height: 250px;
   background-size: cover;
@@ -122,7 +134,7 @@ ul {
   background-size: cover;
   width: 500px;
   height: 500px;
-}
+} */
 
 .pigTile:hover {
   transform: scale(1.05);

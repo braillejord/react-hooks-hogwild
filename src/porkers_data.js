@@ -27,7 +27,7 @@ const hogs = [
       "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/cherub.jpg",
   },
   {
-    name: "Piggy smalls",
+    name: "Piggy Smalls",
     specialty: "Rapping",
     greased: true,
     weight: 5.1,
