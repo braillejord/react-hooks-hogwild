@@ -1,8 +1,12 @@
 import React from "react";
 
-function Filter() {
+function Filter({ filter }) {
     return (
-        console.log("Ouch")
+        <select className="ui dropdown" onChange={(e) => filter(e.target.value)}>
+            <option value="allHogs">All Hogs</option>
+            <option value="greasedHogs">Greased Hogs</option>
+            <option value="nonGreasedHogs">Non-Greased Hogs</option>
+        </select>
     )
 }
 

@@ -131,9 +131,10 @@ ul {
 
 .detailedHog {
   align-self: center;
+  cursor: default;
 }
 
-.card:hover {
+.previewCard:hover {
   transform: scale(1.05);
   cursor: pointer;
 }

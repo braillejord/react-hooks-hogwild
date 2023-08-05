@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 function DetailTile({ clickedHog }) {
-    console.log(clickedHog.name)
     return (
         <div className="detailedHog ui pink card">
             <img className="image" src={clickedHog.image} alt={clickedHog.name} />
