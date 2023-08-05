@@ -57,7 +57,8 @@ function App() {
 			<Nav />
 			<Filter filter={filterHogsByGrease} />
 			<Sort sort={sortHogs} />
-			<AddHogs />
+			<AddHogs hogsToDisplay={hogsToDisplay} setHogsToDisplay={setHogsToDisplay} />
+			<br />
 			<div className="mainContent">
 				<TileContainer hogs={hogsToDisplay} handleHogClick={handleHogClick} />
 				<DetailsContainer clickedHog={clickedHog} />
