@@ -1,11 +1,11 @@
 import React from "react";
 import PreviewTile from "./PreviewTile"
 
-function TileContainer({ hogs }) {
+function TileContainer({ hogs, handleHogClick }) {
     return (
-        <div className="ui container cards">
+        <div className="ui grid container cards">
             {hogs.map((hog) => (
-                <PreviewTile key={hog.name} name={hog.name} image={hog.image} />
+                <PreviewTile key={hog.name} name={hog.name} image={hog.image} handleHogClick={handleHogClick} />
             ))
             }
         </div>

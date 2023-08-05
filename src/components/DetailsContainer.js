@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import DetailTile from "./DetailTile";
 
-function DetailsContainer() {
+function DetailsContainer({ clickedHog }) {
+    console.log(clickedHog)
     return (
-        <DetailTile />
+        <div className="detailsContainer">
+            <DetailTile clickedHog={clickedHog} />
+        </div>
     )
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 
-function PreviewTile({ name, image }) {
+function PreviewTile({ name, image, handleHogClick }) {
     return (
-        <div className="ui column pink centered card" >
+        <div className="ui four wide column centered card" onClick={() => handleHogClick(name)} >
             <div className="image">
                 <img className="hogImage" src={image} alt={name} />
             </div>

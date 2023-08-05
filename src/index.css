@@ -117,29 +117,26 @@ ul {
 }
 
 .hogImg {
-  min-width: 250px;
-  min-height: 250px;
-  max-width: 500px;
-  max-height: 500px;
   background-size: cover;
 }
 
-/* .minPigTile {
-  width: 250px;
-  height: 250px;
-  background-size: cover;
+.mainContent {
+  display: flex;
+  gap: 20px;
 }
 
-.maxPigTile {
-  background-size: cover;
-  width: 500px;
-  height: 500px;
-} */
+.detailsContainer {
+  display: flex;
+}
 
-.pigTile:hover {
+.detailedHog {
+  align-self: center;
+}
+
+.card:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
-
 
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
