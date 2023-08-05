@@ -1,8 +1,12 @@
 import React from "react";
 
-function Sort() {
+function Sort({ sort }) {
     return (
-        console.log("Ouch")
+        <select className="ui dropdown" onChange={(e) => sort(e.target.value)}>
+            <option value="allHogs">Sort Hogs</option>
+            <option value="byName">Sort by Name</option>
+            <option value="byWeight">Sort by Weight</option>
+        </select >
     )
 }
 

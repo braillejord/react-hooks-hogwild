@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Nav from "./Nav";
 import Filter from "./Filter";
-// import Sort from "./Sort";
+import Sort from "./Sort";
+import AddHogs from "./AddHogs"
 import TileContainer from "./TileContainer";
 import DetailsContainer from "./DetailsContainer";
 
@@ -33,11 +34,30 @@ function App() {
 		}))
 	}
 
+	function sortHogs(value) {
+		if (value === "byName") {
+			const sortByName = hogs.sort((a, b) => a.name.localeCompare(b.name))
+			setHogsToDisplay([...sortByName])
+		} else if (value === "byWeight") {
+			const sortByWeight = hogs.sort(function (a, b) {
+				if (a.weight < b.weight) {
+					return -1
+				}
+				if (a.weight > b.weight) {
+					return 1
+				}
+				return 0;
+			})
+			setHogsToDisplay([...sortByWeight])
+		}
+	}
+
 	return (
 		<div className="App">
 			<Nav />
 			<Filter filter={filterHogsByGrease} />
-			{/* <Sort /> */}
+			<Sort sort={sortHogs} />
+			<AddHogs />
 			<div className="mainContent">
 				<TileContainer hogs={hogsToDisplay} handleHogClick={handleHogClick} />
 				<DetailsContainer clickedHog={clickedHog} />
